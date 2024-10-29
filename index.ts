@@ -74,7 +74,7 @@ new (class R2Rectangle {
 		// Движение квадрата относительно курсора
 		const mousePos = Input.CursorOnScreen
 		const cloneRect = this.selectedRect.Clone()
-		// mousePos.SubtractForThis(this.dragOffset).CopyTo(this.selectedRect.pos1)
+		mousePos.SubtractForThis(this.dragOffset)
 		// this.selectedRect.Width = cloneRect.Width
 		// this.selectedRect.Height = cloneRect.Height
 	}
