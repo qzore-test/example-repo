@@ -75,8 +75,7 @@ new (class R2Rectangle {
 		const mousePos = Input.CursorOnScreen
 		const cloneRect = this.selectedRect.Clone()
 		mousePos.SubtractForThis(this.dragOffset).AddForThis(this.selectedRect.pos1)
-		// this.selectedRect.Width = cloneRect.Width
-		// this.selectedRect.Height = cloneRect.Height
+		this.selectedRect.pos1 = mousePos
 	}
 
 	protected MouseKeyUp(key: VMouseKeys) {
